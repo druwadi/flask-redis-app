@@ -1,4 +1,4 @@
-# flask-redis-app
+# Flask-Redis-App
 Example application to connect Flask and Redis with CRUD operations for NoSQL Database Systems Course
 
 # Setup

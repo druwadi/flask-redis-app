@@ -23,8 +23,6 @@ def crudops():
     rating = r.get(movie)
     value = request.form['call']
     formrating = request.form['ratingimdb']
-    
-    print(value)
     if value == 'create':
         if rating is not None:
             formatted = ("Movie name: ", movie , "already exists!")
