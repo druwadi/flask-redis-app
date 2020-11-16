@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <!-- Adding Bootstrap for styling in HTML file -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="static/style.css">
+</head>
+
+<div class="jumbotron text-center">
+  <h1>Movie Search and Update Database</h1>
+  <p>A simple movie database that allows for CRUD operations through Redis DB.</p>
+</div>
+<body>
+
+<form method="POST" style="text-align: center">
+  <div class="form-group">
+    <label for="movietitle">Movie Title</label>
+    <input type="text" class="form-control" id="movietitle" name="movietitle" placeholder="Enter movie title">
+  </div>
+  <div class="form-group">
+    <label for="ratingimdb">Movie Rating (1.0-10.0)</label>
+    <input type="text" class="form-control" id="ratingimdb" name="ratingimdb">
+  </div>
+</br>
+<h3>
+  Click on a selection below to pick your choice.
+</h3>
+</br>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="create" name="call" value="create" required>
+    <label class="form-check-label" for="create">Create Movie Entry</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="update" name="call" value="update" required>
+    <label class="form-check-label" for="update">Update Movie Entry</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="delete" name="call" value="delete" required>
+    <label class="form-check-label" for="delete">Delete Movie Entry</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="search" name="call" value="search" required>
+    <label class="form-check-label" for="search">Search Movie Entry</label>
+  </div>
+</br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</br>
+</form>
+
+</br>
+</br>
+
+<h3 style="text-align: center;">Results: </h3>
+<h3 style="text-align: center;">{{message}} </h4>
+
+</body>
