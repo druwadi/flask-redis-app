@@ -19,7 +19,7 @@ def index():
 
 @app.route("/", methods=['POST'])
 def crudops():
-    movie = request.form['movietitle']
+    movie = request.form['movietitle'].title()
     rating = r.get(movie)
     value = request.form['call']
     formrating = request.form['ratingimdb']
